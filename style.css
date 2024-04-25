@@ -1,0 +1,188 @@
+:root {
+  --header-bg: #fff;
+  --header-text: #000;
+  --section-bg: #fafafa;
+  --section-text: #000;
+  --input-bg: #fff;
+  --region-bg: #fff;
+  --region-text: #000;
+  --card-bg:#fff;
+  --card-text:#000;
+}
+.light{
+  --input-bg: #2b3844;
+  --input-text: #fff;
+  --header-bg: #2b3844;
+  --header-text: #fff;
+  --section-bg: #202c36;
+  --section-text: #fff;
+  --region-bg: #2b3844;
+  --region-text: #fff;
+  --card-bg: #2b3844;
+  --card-text:#fff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Nunito Sans";
+  font-size: 20px;
+}
+.header__container {
+  max-width: 1280px;
+  height: 80px;
+  margin-top: 0px;
+  background-color: var(--header-bg);
+}
+.container {
+  margin-inline: auto;
+  justify-content: space-between;
+  display: flex;
+  max-width: 1400px;
+  align-items: center;
+  width: 100%;
+}
+.header-title {
+  margin-left: 81px;
+  color: var(--header-text);
+}
+#darkmodeBtn {
+  display: flex;
+  margin-right: 81px;
+  width: 150px;
+  padding: 12px;
+  border: none;
+  background-color: inherit;
+  align-items: center;
+  height: 30px;
+}
+
+.section {
+  background-color: var(--section-bg);
+  display: flex;
+  height: 1000px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.section input {
+  margin-bottom: 300px;
+  margin-left: 81px;
+}
+.search {
+  position: relative;
+  align-items: center;
+}
+.search input {
+  border-radius: 5px;
+  border: none;
+  background-color: var(--input-bg);
+  margin-top: 128px;
+  width: 480px;
+  color: var(--input-text);
+  height: 56px;
+  opacity: 1;
+}
+.search img {
+  position: absolute;
+  margin-left: -450px;
+  margin-top: 150px;
+}
+.search input::placeholder {
+  padding-left: 70px;
+}
+#region {
+  width: 200px;
+  height: 50px;
+  padding: 12px;
+  display: block;
+  margin-top: 128px;
+  margin-right: 81px;
+  color: var(--region-text);
+  font-size: 14px;
+  border: none;
+  background-color: var(--region-bg);
+}
+#region option {
+  padding: 20px;
+}
+#region option:first-child {
+  margin-bottom: 5px;
+}
+
+.card {
+  width: 264px;
+  grid-column: auto;
+  border-radius: 5px;
+  background-color: var(--card-bg);
+  color: var(--card-text);
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 70px;
+}
+.card img {
+  width: 264px;
+  height: 160px;
+  border-radius: 5px;
+}
+.card p {
+  padding: 24px;
+  font-size: 14;
+}
+.card h4 {
+  margin-left: 24px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+main {
+  background-color: var(--section-bg);
+  margin-top: -600px;
+  padding-left: 41px;
+}
+
+
+/* loader */
+.loader,
+.loader:before,
+.loader:after {
+  background: transparent;
+  -webkit-animation: load1 1s infinite ease-in-out;
+  animation: load1 1s infinite ease-in-out;
+  width: 1em;
+  height: 4em;
+}
+
+.loader {
+  color: var(--primaryColor);
+  text-indent: -9999em;
+  margin: 88px auto;
+  margin-top: 20rem;
+  position: relative;
+  font-size: 3rem;
+  -webkit-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-animation-delay: -0.16s;
+  animation-delay: -0.16s;
+}
+
+.loader:before,
+.loader:after {
+  position: absolute;
+  top: 0;
+  content: '';
+}
+
+.loader:before {
+  left: -1.5em;
+  -webkit-animation-delay: -0.32s;
+  animation-delay: -0.32s;
+}
+
+.loader:after {
+  left: 1.5em;
+}

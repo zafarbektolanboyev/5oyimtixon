@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./font.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Country</title>
+</head>
+<body>
+    <a href="./about.html">About</a>
+    <header class="header__container container">
+        <h2 class="header-title">Where in the world?</h2>
+        <button id="darkmodeBtn">
+            <img id="darkmodeImg" src="./md-moon.svg" alt="" width="20" height="20">
+            <span></span>
+        </button>
+    </header>
+    <section class="section">
+       <div class="search">
+            <input type="text" placeholder="Search for a country...">
+            <img src="./ios-search.svg" alt="" width="20" height="20">
+       </div>
+        <select name="region" id="region">
+            <option value="filter">Filter by Region</option>
+            <option value="all">All</option>
+            <option value="africa">Africa</option>
+            <option value="amerika">Amerika</option>
+            <option value="asia">Asia</option>
+            <option value="europe">Europe</option>
+            <option value="oceania">Oceania</option>
+        </select>
+    </section>
+    <main>
+        <div id="cards" class="cards">
+            <!-- <div class="card">
+                <img src="" alt="">
+                <h4>Germaniya</h4>
+                <p>Population:81,770,900</p>
+                <p>Region:Europe</p>    
+                <p>Capital:Berlin</p>
+            </div> -->
+        </div>
+    </main>
+    <!-- <div class="loader"></div> -->
+    <script src="./app.js"></script>
+</body>
+</html>
